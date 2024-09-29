@@ -2,6 +2,11 @@ package com.goa;
 
 import java.util.ArrayList;
 import java.util.List;
+/*
+ * Goa Legislative Assembly implementation using OOPs concepts
+ * @author Omkar Mhamal
+ * 
+ */
 
 public class LegislativeAssembly {
     private String stateName;

@@ -1,11 +1,19 @@
 package com.goa;
 
 import java.util.Scanner;
+/*
+ * Goa Legislative Assembly implementation using OOPs concepts
+ * @author Omkar Mhamal
+ * 
+ */
 
+ /*Main Driver Class */
 public class Main {
+    /*Creating Object of LegislativeAssembly Class */
     private static LegislativeAssembly assembly = new LegislativeAssembly("Goa");
     private static Scanner scanner = new Scanner(System.in);
 
+    /*main method */
     public static void main(String[] args) {
         boolean exit = false;
 
@@ -62,6 +70,7 @@ public class Main {
         }
     }
 
+    /*Method to add member */
     private static void addMember() {
         System.out.print("Enter Member name: ");
         String name = scanner.nextLine();
@@ -77,6 +86,7 @@ public class Main {
         System.out.println("Member added.");
     }
 
+    /*Method to class speaker */
     private static void electSpeaker() {
         System.out.print("Enter Speaker's name: ");
         String name = scanner.nextLine();
@@ -86,6 +96,7 @@ public class Main {
         System.out.println("Speaker elected.");
     }
 
+    /* Method to class Deputy speaker */
     private static void electDeputySpeaker() {
         System.out.print("Enter Deputy Speaker's name: ");
         String name = scanner.nextLine();
@@ -95,6 +106,7 @@ public class Main {
         System.out.println("Deputy Speaker elected.");
     }
 
+    /* Method to class for appointing Chief Minister */
     private static void appointChiefMinister() {
         System.out.print("Enter Chief Minister's name: ");
         String name = scanner.nextLine();
@@ -106,6 +118,7 @@ public class Main {
         System.out.println("Chief Minister appointed.");
     }
 
+    /* Method for class Call session */
     private static void callSession() {
         System.out.print("Enter Session Name: ");
         String sessionName = scanner.nextLine();
@@ -119,6 +132,7 @@ public class Main {
         System.out.println("Session called.");
     }
 
+    /* Method for class Form Committee */
     private static void formCommittee() {
         System.out.print("Enter Committee Name: ");
         String committeeName = scanner.nextLine();
@@ -131,6 +145,7 @@ public class Main {
         System.out.println("Committee formed.");
     }
 
+    /*Method for class Introduce Bill */
     private static void introduceBill() {
         System.out.print("Enter Bill Title: ");
         String title = scanner.nextLine();
@@ -140,6 +155,7 @@ public class Main {
         Bill bill = new Bill(title, description);
         assembly.introduceBill(bill);
     }
+
 
     private static void passBill() {
         System.out.print("Enter Bill Title to Pass: ");

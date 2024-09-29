@@ -1,5 +1,11 @@
 package com.goa;
+/*
+ * Goa Legislative Assembly implementation using OOPs concepts
+ * @author Omkar Mhamal
+ * 
+ */
 
+ 
 public abstract class Person {
     protected String name;
 
